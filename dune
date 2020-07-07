@@ -1,7 +1,7 @@
 (library
   (name domain_name)
   (public_name domain-name)
-  (modules domain_name)
+  (modules domain_name domain_name_cap_tee)
   (libraries fmt astring)
   (ocamlopt_flags (-S)))
 
