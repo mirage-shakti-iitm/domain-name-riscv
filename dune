@@ -2,7 +2,8 @@
   (name domain_name)
   (public_name domain-name)
   (modules domain_name)
-  (libraries fmt astring))
+  (libraries fmt astring)
+  (ocamlopt_flags (-S)))
 
 (test
   (name tests)
