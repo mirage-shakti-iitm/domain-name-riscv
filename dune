@@ -1,9 +1,9 @@
 (library
   (name domain_name)
   (public_name domain-name)
-  (modules domain_name domain_name_cap_tee)
+  (modules domain_name)
   (libraries fmt astring)
-  (ocamlopt_flags (-S)))
+  (ocamlopt_flags (-default-compartment-id 1 -function-sections)))
 
 (test
   (name tests)
